@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Donor Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color:#A6ACAF;
+
+    }
+
+
+    /* Add padding to containers */
+    .container {
+      border-radius: 5px;
+      background-color:#f2f2f2;
+      padding: 20px;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password] ,input[type=number],input[type=email]{
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+
+      background: #f2f2f2;
+    }
+
+    input[type=text]:focus, input[type=password]:focus ,input[type=number],input[type=email]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color:#1A5276;
+      color: white;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 4px;
+    }
+
+    .registerbtn:hover {
+
+      background-color: grey;
+
+      opacity: 1;
+    }
+
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
+    </style>
+    </head>
+      <body>
+
+
+    <form action="register.php" method="post">
+        <h2 style="text-align: center; color:  #1A5276;  text-decoration: bolder;font-size:40px;"><i>REGISTER</i></h2>
+ <div class="container">
+        <label for="name"><b> Name</b></label>
+        <input type="text" placeholder="Enter  Name" name="name" id="name" required>
+
+        <label for="phnno"><b>Phone Number</b></label>
+        <input type="text" placeholder="Contact" name="phnno" id="contact" required>
+
+        <label for="email"><b>Email</b></label>
+        <input style="font-size:17px"type="email" placeholder="Enter Email" name="email" id="email" required>
+
+        <label for="password"><b >Password</b></label>
+        <input style="font-size:17px"type="password" placeholder="Enter Password" name="password" id="psw" required>
+
+        <label for="address"><b>Address</b></label><br />
+        <textarea  style="font-size:17px" name="address" rows="5" cols="60" placeholder="Full address"
+          id="address" required></textarea><br /><br />
+
+          <label for="var"><b >Donor/Recipient</b></label><br />
+          <input type="radio" id="var" name="var" value="Donor">
+  <label for="var">Donor</label><br>
+  <input type="radio" id="var" name="var" value="Recipient">
+  <label for="var">Recipient</label><br><br />
+
+        <button type="submit" name="save" class="registerbtn">Register</button>
+      </div>
+    </form>
+
+
+    </body>
+    </html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+input[type=text], input[type=number],textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin: 5px 0 22px 0;
+}
+
+
+input[type=submit] {
+  background-color: #1A5276;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:grey;
+  text-align: center;
+}
+
+.fb {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.rate{
+    padding-bottom: 40px;
+}
+
+    </style>
+</head>
+
+    <body>
+
+      <div class="header">
+  <img src="logo2.png"style="float:left; width:200px;height:150px;margin-right:100px;margin-left:175px">
+    <h1 >ZERO HUNGER</h1>
+  </div>
+
+
+      <div class=" navbar">
+    <a class="right" href="https://docs.google.com/forms/d/e/1FAIpQLSeXRP8TVJxiImdC9DwWxOMlZcSh2rQHSYtS-yXs4jcxWmVsjQ/viewform?usp=sf_link"><i class="fa fa-fw fa-envelope" ></i> Contact Us</a>
+    <a class="right active" href="feedback.html"><i class="fa fa-fw fa-user"></i> Feedback</a>
+  <a  href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
+  <a href="donor.html"><i class="fa fa-fw fa-search"></i> Donor</a>
+  <a href="recipient.html"><i class="fa fa-fw fa-search"></i> Recipient</a>
+  <a  href="register.html"><i class="fa fa-fw fa-user"></i>Register</a>
+  </div></br>
+
+
+        <h2 style="text-align: center; color:  #1A5276; font-size:40px;"><i>FEEDBACK FORM</i></h2>
+        <div class="fb">
+        <form action="feedback.php" method="post">
+
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Your Name" name="name" id="name" required><br>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required><br>
+
+        <label for="phnno"><b>Contact Number</b></label>
+        <input  style="font-size:17px" type="number" placeholder="Phone number" name="phnno" id="phnno" required><br>
+
+
+        <div class="rate">
+        <p><b>Overall Rating</b></p>
+             <input type="radio" name="rating" value="Very bad" id="Very bad">
+             <label for="Very bad">VeryBad😖</label>
+             <input type="radio" name="rating" value="bad" id="bad">
+             <label for="bad">Bad😟</label>
+             <input type="radio" name="rating" value="Good" id="good">
+             <label for="good">Good😁</label>
+             <input type="radio" name="rating" value="Very Good" id="very good">
+             <label for="very good">Very Good😊</label>
+             <input type="radio" name="rating" value="Excellent" id="excellent">
+             <label for="excellent">Excellent🤩</label><br>
+        </div>
+        <label for="abt"><b>Send Us Your Feedback😊</b></label><br />
+        <textarea name="feedback" rows="5" cols="100"  id="abt" required></textarea><br />
+
+
+        <input type="submit" value="Submit">
+ </form>
+ </div>
+
+
+</body>
+</html>
